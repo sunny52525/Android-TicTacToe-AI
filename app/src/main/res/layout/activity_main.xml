@@ -10,16 +10,51 @@
     tools:context=".MainActivity">
 
 
-    <View
-        android:id="@+id/view3"
+    <ImageView
+        android:id="@+id/block2"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/block1"
+        app:layout_constraintStart_toEndOf="@+id/block1"
+        app:srcCompat="@android:drawable/btn_dialog" />
 
-        style="@style/Divider"
-        android:layout_marginBottom="308dp"
+    <ImageView
+        android:id="@+id/block5"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="4dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/block4"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageView
+        android:id="@+id/block4"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="4dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/block7"
+        app:layout_constraintEnd_toStartOf="@+id/block5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/block7"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageView
+        android:id="@+id/block7"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="124dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
+        app:srcCompat="@android:drawable/btn_dialog" />
 
     <View
         android:id="@+id/view2"
@@ -28,16 +63,39 @@
         android:layout_marginBottom="96dp"
         app:layout_constraintBottom_toTopOf="@+id/view3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/block8"
+        android:layout_width="88dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="4dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/block7"
+        app:layout_constraintStart_toEndOf="@+id/block7"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageView
+        android:id="@+id/block1"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="12dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/block4"
+        app:layout_constraintStart_toStartOf="@+id/block4"
+        app:srcCompat="@android:drawable/btn_dialog" />
 
     <View
         android:id="@+id/view5"
 
 
         style="@style/DividerVertical"
-        android:layout_marginStart="152dp"
-        android:layout_marginBottom="212dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -46,42 +104,20 @@
 
 
         style="@style/DividerVertical"
-        android:layout_marginStart="96dp"
-        android:layout_marginBottom="212dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="124dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/view5" />
 
     <ImageView
-        android:id="@+id/block1"
+        android:id="@+id/block6"
         android:layout_width="95dp"
         android:layout_height="93dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginStart="8dp"
         android:baselineAlignBottom="true"
         android:scaleType="center"
-        app:layout_constraintBottom_toTopOf="@+id/block4"
-        app:layout_constraintStart_toStartOf="@+id/block4"
-        app:srcCompat="@android:drawable/btn_dialog" />
-
-    <ImageView
-        android:id="@+id/block2"
-        android:layout_width="95dp"
-        android:layout_height="93dp"
-        android:layout_marginStart="3dp"
-        android:baselineAlignBottom="true"
-        android:scaleType="center"
-        app:layout_constraintBaseline_toBaselineOf="@+id/block1"
-        app:layout_constraintStart_toEndOf="@+id/block1"
-        app:srcCompat="@android:drawable/btn_dialog" />
-
-    <ImageView
-        android:id="@+id/block3"
-        android:layout_width="95dp"
-        android:layout_height="93dp"
-        android:layout_marginStart="3dp"
-        android:baselineAlignBottom="true"
-        android:scaleType="center"
-        app:layout_constraintBaseline_toBaselineOf="@+id/block2"
-        app:layout_constraintStart_toStartOf="@+id/block6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/block5"
+        app:layout_constraintStart_toStartOf="@+id/view7"
         app:srcCompat="@android:drawable/btn_dialog" />
 
     <ImageView
@@ -93,66 +129,29 @@
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="@+id/block8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.193"
         app:layout_constraintStart_toEndOf="@+id/block8"
         app:srcCompat="@android:drawable/btn_dialog" />
 
-    <ImageView
-        android:id="@+id/block8"
-        android:layout_width="95dp"
-        android:layout_height="93dp"
-        android:layout_marginStart="3dp"
-        android:baselineAlignBottom="true"
-        android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="@+id/block7"
-        app:layout_constraintStart_toEndOf="@+id/block7"
-        app:srcCompat="@android:drawable/btn_dialog" />
+    <View
+        android:id="@+id/view3"
 
-    <ImageView
-        android:id="@+id/block7"
-        android:layout_width="95dp"
-        android:layout_height="93dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginBottom="212dp"
-        android:baselineAlignBottom="true"
-        android:scaleType="center"
+        style="@style/Divider"
+        android:layout_marginBottom="220dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/block6"
+        android:id="@+id/block3"
         android:layout_width="95dp"
         android:layout_height="93dp"
-        android:layout_marginStart="3dp"
         android:baselineAlignBottom="true"
         android:scaleType="center"
-        app:layout_constraintBaseline_toBaselineOf="@+id/block5"
-        app:layout_constraintStart_toStartOf="@+id/view7"
-        app:srcCompat="@android:drawable/btn_dialog" />
-
-    <ImageView
-        android:id="@+id/block5"
-        android:layout_width="95dp"
-        android:layout_height="93dp"
-        android:layout_marginStart="3dp"
-        android:baselineAlignBottom="true"
-        android:scaleType="center"
-        app:layout_constraintBaseline_toBaselineOf="@+id/block4"
-        app:layout_constraintStart_toStartOf="@+id/view5"
-        app:srcCompat="@android:drawable/btn_dialog" />
-
-    <ImageView
-        android:id="@+id/block4"
-        android:layout_width="95dp"
-        android:layout_height="93dp"
-        android:layout_marginBottom="5dp"
-        android:baselineAlignBottom="true"
-        android:scaleType="center"
-        app:layout_constraintBottom_toTopOf="@+id/block7"
-        app:layout_constraintEnd_toStartOf="@+id/block5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/block7"
+        app:layout_constraintBaseline_toBaselineOf="@+id/block2"
+        app:layout_constraintStart_toStartOf="@+id/block6"
         app:srcCompat="@android:drawable/btn_dialog" />
 
     <TextView
@@ -180,7 +179,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/block8"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
