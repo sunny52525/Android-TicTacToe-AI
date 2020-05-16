@@ -129,7 +129,7 @@
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="@+id/block8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/block8"
         app:srcCompat="@android:drawable/btn_dialog" />
 
@@ -169,17 +169,30 @@
     <Button
         android:id="@+id/reset"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
         android:background="#313332"
         android:text="RESET"
         android:textColor="@color/Whtie"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/block8"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/block7"
+        app:layout_constraintTop_toBottomOf="@+id/block7" />
+
+    <Button
+        android:id="@+id/playerstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:background="#313332"
+        android:text="Multiplayer"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/Whtie"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/reset"
+        app:layout_constraintEnd_toEndOf="@+id/block9" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
