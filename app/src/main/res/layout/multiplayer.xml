@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/Black"
+
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/block2m"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/block1m"
+        app:layout_constraintStart_toEndOf="@+id/block1m"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageView
+        android:id="@+id/block5m"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="4dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/block4m"
+        app:layout_constraintStart_toStartOf="@+id/view5m"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageView
+        android:id="@+id/block4m"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="4dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/block7m"
+        app:layout_constraintEnd_toStartOf="@+id/block5m"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/block7m"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageView
+        android:id="@+id/block7m"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="124dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <View
+        android:id="@+id/view2m"
+
+        style="@style/Divider"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintBottom_toTopOf="@+id/view3m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/block8m"
+        android:layout_width="88dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="4dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/block7m"
+        app:layout_constraintStart_toEndOf="@+id/block7m"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageView
+        android:id="@+id/block1m"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="12dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/block4m"
+        app:layout_constraintStart_toStartOf="@+id/block4m"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <View
+        android:id="@+id/view5m"
+
+
+        style="@style/DividerVertical"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view7m"
+
+
+        style="@style/DividerVertical"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/view5m" />
+
+    <ImageView
+        android:id="@+id/block6m"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="8dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/block5m"
+        app:layout_constraintStart_toStartOf="@+id/view7m"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageView
+        android:id="@+id/block9m"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="3dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/block8m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/block8m"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <View
+        android:id="@+id/view3m"
+
+        style="@style/Divider"
+        android:layout_marginBottom="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/block3m"
+        android:layout_width="95dp"
+        android:layout_height="93dp"
+        android:baselineAlignBottom="true"
+        android:scaleType="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/block2m"
+        app:layout_constraintStart_toStartOf="@+id/block6m"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <TextView
+        android:id="@+id/resultm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/block2m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/resetm"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#313332"
+        android:text="RESET"
+        android:textColor="@color/Whtie"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/block7m"
+        app:layout_constraintTop_toBottomOf="@+id/block7m" />
+
+    <Button
+        android:id="@+id/playerstylem"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#313332"
+        android:text="SinglePlayer"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/Whtie"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/resetm"
+        app:layout_constraintEnd_toEndOf="@+id/block9m" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    android:background="@color/Black"-->
